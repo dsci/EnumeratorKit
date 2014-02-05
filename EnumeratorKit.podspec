@@ -17,13 +17,15 @@ Pod::Spec.new do |s|
   EOS
 
   s.ios.deployment_target = '5.1.1'
+  s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
   s.homepage     = 'https://github.com/sharplet/EnumeratorKit'
   s.license      = 'MIT'
   s.author       = { 'Adam Sharp' => 'adsharp@me.com' }
-  s.source       = { :git => 'https://github.com/sharplet/EnumeratorKit.git', :tag => "#{s.version}" }
-
+   
+  s.source       = { :git => "https://github.com/dsci/handlebars-objc.git", :branch => "master" }
+  
   s.source_files = 'EnumeratorKit/EnumeratorKit.h'
 
   s.default_subspec = 'Core'
